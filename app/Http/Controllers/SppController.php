@@ -63,7 +63,7 @@ class SppController extends Controller
         if (!$spp) {
             return response()->json([
                 'success' => false,
-                'message' => 'Pegawai tidak ditemukan'
+                'message' => 'Data SPP tidak ditemukan'
             ], 404);
         }
 
@@ -71,7 +71,7 @@ class SppController extends Controller
 
         return response()->json([
             'success' => true,
-            'message' => 'Pegawai berhasil diperbarui',
+            'message' => 'Data SPP berhasil diperbarui',
             'data' => $spp
         ], 200);
     }
